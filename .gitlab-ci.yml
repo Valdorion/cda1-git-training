@@ -1,0 +1,25 @@
+stages:
+  - build
+  - tests
+  - deploy
+
+building:
+  stage: build
+  script:
+    - echo "hello this is building !"
+
+lint:
+  stage: tests
+  script:
+    - echo "hello this is linting !"
+
+unittests:
+  stage: tests
+  script:
+    - echo "hello this is unittesting !"
+
+deploying:
+  stage: deploy
+  script:
+    - echo "hello this is deploying !"
+
