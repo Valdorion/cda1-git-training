@@ -3,6 +3,9 @@ stages:
   - tests
   - deploy
 
+image:
+  name: python:3.8.10
+
 building:
   stage: build
   script:
@@ -11,7 +14,8 @@ building:
 lint:
   stage: tests
   script:
-    - echo "hello this is linting !"
+    - python3 -m pip install pylint
+    - python3 -m pylint *.py
 
 unittests:
   stage: tests
