@@ -1,3 +1,4 @@
+""" few functions to say stuff """
 
 def say_something_to_someone(what, to_who):
 	print(what  + " " + to_who)
